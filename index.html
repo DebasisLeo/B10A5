@@ -26,7 +26,7 @@
 
 <body class="lexend">
     <header style="position: sticky; top: 0; " >
-        <nav class="bg-[#F9F7F3] border py-8 mb-16">
+        <nav class="bg-[#F9F7F3] backdrop-blur-xl opacity-90 border py-8 border-red-500 ">
             <div class="flex items-center md:flex md:justify-between   md:max-w-screen-xl md:mx-auto max-w-screen-xl justify-around mx-auto  ">
                 <div class="">
 
@@ -43,13 +43,13 @@
             </div>
         </nav>
     </header>
-    <main class="max-w-screen-xl mx-auto">
-        <div class="flex justify-center gap-8 mb-10" style="position: sticky; top: 175px; " md:style="position: sticky; top: 205px; ">
+    <main class="">
+        <div class="flex backdrop-blur-sm border border-red-600 justify-center gap-8 mb-10 p-8" style="position: sticky; top: 110px; " md:style="position: sticky; top: 100px; ">
             <button id="don" onclick="donate(this)" class="btn text-xl font-bold bg-[#B4F461]">Donation</button>
             <button onclick="history(this)" id="his" class="btn text-xl font-bold bg-white">History</button>
         </div>
 
-       <div id="d-1">
+       <div id="d-1" class="max-w-screen-xl mx-auto">
         <div class=" md:flex border border-[#1111111A] p-5 md:p-10 rounded-md">
             <div class="md:w-1/2">
                 <img src="./assets/noakhali.png" alt="">
@@ -122,7 +122,7 @@
             </div>
         </div>
        </div>
-       <div id="d-2" class="hidden">
+       <div id="d-2" class="hidden max-w-screen-xl mx-auto">
 
        </div>
        
