@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4b1502ab51.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="bg-[#F9F7F3] border py-8 mb-12">
+            <div class="navbar flex justify-between  max-w-screen-xl mx-auto  ">
+                <div class="">
+
+                 <button onclick="home(this)" class="btn btn-ghost bg-[#B4F461] rounded-lg text-xl">Home</button>
+                </div>
+                <div class="   lg:flex lg:justify-center lg:items-center lg:gap-5">
+                    <img src="./assets/logo.png" alt="">
+                    <h4 class="text-xl font-bold">Donate Bangladesh</h4>
+                </div>
+                <div class=" flex gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span id="total">500000</span> BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+    <p class="text-5xl font-bold mb-10">Important FAQ</p>
+        <div class="collapse collapse-arrow bg-base-200 py-5  border border-[#1111111A]">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What Is The Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents <br> the page so that programs can change the document structure, style, and content. </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 py-5  border border-[#1111111A]">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How Do You Select An Element From The DOM?</div>
+            <div class="collapse-content">
+              <p>
+                The DOM Input select() method selects all the text content of a textarea or an input element <br> that contains the text field. Syntax: element. select();</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 py-5 border border-[#1111111A]">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What Is Event Deegation In the Context Of The DOM,And Why Is It Useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events <br> on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200 py-5 border border-[#1111111A]">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How Do You Manipulate An Elements Attributes And Styles Using The DOM?</div>
+            <div class="collapse-content">
+              <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. <br> The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+            </div>
+          </div>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+</html>
