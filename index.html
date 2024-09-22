@@ -13,17 +13,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+    </style>
 </head>
 
-<body>
-    <header>
-        <nav class="bg-[#F9F7F3] border py-8 mb-20">
-            <div class="navbar flex justify-between  max-w-screen-xl mx-auto  ">
+
+<body class="lexend">
+    <header style="position: sticky; top: 0; " >
+        <nav class="bg-[#F9F7F3] border py-8 mb-16">
+            <div class="flex items-center md:flex md:justify-between   md:max-w-screen-xl md:mx-auto max-w-screen-xl justify-around mx-auto  ">
                 <div class="">
 
                  <button onclick="blog(this)" class="btn btn-ghost bg-[#B4F461] rounded-lg text-xl">Blog</button>
                 </div>
-                <div class="   lg:flex lg:justify-center lg:items-center lg:gap-5">
+                <div class="flex  items-center justify-center  gap-3  md:flex md:justify-center md:items-center md:gap-5">
                     <img src="./assets/logo.png" alt="">
                     <h4 class="text-xl font-bold">Donate Bangladesh</h4>
                 </div>
@@ -35,18 +44,18 @@
         </nav>
     </header>
     <main class="max-w-screen-xl mx-auto">
-        <div class="flex justify-center gap-8 mb-10">
+        <div class="flex justify-center gap-8 mb-10" style="position: sticky; top: 175px; " md:style="position: sticky; top: 205px; ">
             <button id="don" onclick="donate(this)" class="btn text-xl font-bold bg-[#B4F461]">Donation</button>
             <button onclick="history(this)" id="his" class="btn text-xl font-bold bg-white">History</button>
         </div>
 
        <div id="d-1">
-        <div class=" flex border border-[#1111111A] p-10 rounded-md">
-            <div class="w-1/2">
+        <div class=" md:flex border border-[#1111111A] p-5 md:p-10 rounded-md">
+            <div class="md:w-1/2">
                 <img src="./assets/noakhali.png" alt="">
             </div>
-            <div class="w-1/2 space-y-6">
-                <div class="flex gap-4 w-1/6 py-1 rounded-md bg-[#1111110D]">
+            <div class="md:w-1/2 space-y-6">
+                <div class="flex mt-4 gap-4 w-1/4 py-1 justify-center rounded-md bg-[#1111110D]">
                     <img src="./assets/coin.png" alt="">
                     <p><span id="s-1">0</span> BDT</p>
                 </div>
@@ -77,16 +86,16 @@
                </div>
             </div>
         </div>
-        <div class=" flex border border-[#1111111A] p-10 rounded-md">
-            <div class="w-1/2">
+        <div class=" md:flex border border-[#1111111A] p-5 md:p-10 rounded-md">
+            <div class="md:w-1/2">
                 <img src="./assets/feni.png" alt="">
             </div>
-            <div class="w-1/2 space-y-6">
-                <div class="flex gap-4 bg-[#1111110D] w-1/6 py-1 rounded-md ">
+            <div class="md:w-1/2  space-y-6">
+                <div class="flex mt-4 gap-4 bg-[#1111110D] w-1/4 justify-center py-1 rounded-md ">
                     <img src="./assets/coin.png" alt="">
                     <p><span id="s-2">0</span> BDT</p>
                 </div>
-                <h4 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
+                <h4 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h4>
                 <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <input type="text" id="i-2" placeholder="Write Donation Amount" class="input input-bordered w-full " />
                <div>
@@ -94,16 +103,16 @@
                </div>
             </div>
         </div>
-        <div class=" flex border border-[#1111111A] p-10 rounded-md">
-            <div class="w-1/2">
+        <div class=" md:flex border border-[#1111111A] p-5 md:p-10 rounded-md">
+            <div class="md:w-1/2">
                 <img src="./assets/quota-protest.png" alt="">
             </div>
-            <div class="w-1/2 space-y-6">
-                <div class="flex gap-4 w-1/6 rounded-md py-1 bg-[#1111110D]">
+            <div class="md:w-1/2 space-y-6">
+                <div class="flex mt-4 gap-4 w-1/4 justify-center rounded-md py-1 bg-[#1111110D]">
                     <img src="./assets/coin.png" alt="">
                     <p><span id="s-3">0</span> BDT</p>
                 </div>
-                <h4 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
+                <h4 class="text-xl font-bold">Aid for Injured in the Quota Movement</h4>
                 <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input type="text" id="i-3" placeholder="Write Donation Amount" class="input input-bordered w-full " />
                <div>
