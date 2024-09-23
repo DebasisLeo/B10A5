@@ -6,7 +6,9 @@ document.getElementById('b-2').addEventListener('click',function()
         let sum2=parseFloat(document.getElementById('s-2').innerText);
         sum2+=inp2;
         document.getElementById('s-2').innerText=sum2;
+        
         reduce2();
+        document.getElementById('i-2').value="";
 
         let now = new Date();
         let options = { timeZone: 'Asia/Dhaka', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
@@ -21,10 +23,12 @@ document.getElementById('b-2').addEventListener('click',function()
           </div>
         `;
         div2.appendChild(di2);
+        my_modal_3.showModal()
     }
 
     else
     {
+        document.getElementById('i-2').value = "";
         return alert('invalid input');
     }
 })

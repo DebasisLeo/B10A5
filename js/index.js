@@ -1,12 +1,13 @@
-document.getElementById('b-1').addEventListener('click', function() {
-   
+document.getElementById('b-1').addEventListener('click', function () {
+
     let inp1 = parseFloat(document.getElementById('i-1').value);
     if (inp1 >= 0) {
         let sum1 = parseFloat(document.getElementById('s-1').innerText);
         sum1 += inp1;
         document.getElementById('s-1').innerText = sum1;
-        reduce1();
 
+        reduce1();
+        document.getElementById('i-1').value = "";
         let now = new Date();
         let options = { timeZone: 'Asia/Dhaka', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
         let dateTime = now.toLocaleString('en-BD', options) + " GMT+0600 (Bangladesh Standard Time)";
@@ -20,7 +21,10 @@ document.getElementById('b-1').addEventListener('click', function() {
           </div>
         `;
         div1.appendChild(di1);
+        my_modal_5.showModal()
     } else {
+        document.getElementById('i-1').value = "";
+        document.getElementById('b-1').removeAttribute('onclick',false);
         return alert('Invalid input');
     }
 });
