@@ -1,4 +1,4 @@
 function blog(event)
 {
-    window.location.href='. /blog.html';
+    window.location.href='./blog.html';
 } 
