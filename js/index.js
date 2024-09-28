@@ -1,7 +1,7 @@
 document.getElementById('b-1').addEventListener('click', function () {
-
+    let tot=parseFloat(document.getElementById('total').innerText)
     let inp1 = parseFloat(document.getElementById('i-1').value);
-    if (inp1 >= 0) {
+    if (inp1 >= 0 && inp1<tot) {
         let sum1 = parseFloat(document.getElementById('s-1').innerText);
         sum1 += inp1;
         document.getElementById('s-1').innerText = sum1;

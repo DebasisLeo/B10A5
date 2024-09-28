@@ -1,9 +1,9 @@
 document.getElementById('b-2').addEventListener('click',function()
 {
-   
+    let tot=parseFloat(document.getElementById('total').innerText)
     let inp2=parseFloat(document.getElementById('i-2').value);
-    if (inp2>=0) {
-        let sum2=parseFloat(document.getElementById('s-2').innerText);
+    if (inp2>=0 && inp2<tot) {
+        let sum2 = parseFloat(document.getElementById('s-2').innerText);
         sum2+=inp2;
         document.getElementById('s-2').innerText=sum2;
         
